@@ -14,9 +14,9 @@ public class Close_in {
         int  comparable= 10;
 
         Scanner scn = new Scanner(System.in);
-         System.out.println("Введите первое сравниваемое число");
+         System.out.println("Введите первое сравниваемое число:");
         first= scn.nextDouble();
-        System.out.println("Введите второе сравниваемое число");
+        System.out.println("Введите второе сравниваемое число:");
         second= scn.nextDouble();
 
            difference01= Math.abs(first-comparable);
