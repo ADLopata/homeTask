@@ -34,20 +34,20 @@ public class QuadraticEquation {
                     System.out.println("Ноль использовать нельзя");
                 }else {
 
-                D = Math.sqrt((b * b) - 4 * a * c);
+                D = ((b * b) - 4 * a * c);
                 if (D < 0) {
                     System.out.println("Дуйствительных корней нет");
                 } else if (D == 0) {
-                    x1 = ((-b + D) / 2 * a);
+                    x1 = ((-b +Math.sqrt(D)) / 2 * a);
                     x2 = x1;
-                    System.out.println("x1 = x2" + x1);
+                    System.out.println("x1 = x2\n" + x1);
 
                 } else {
                     System.out.println("D = " + D);
 
-                    x1 = ((-b + D) / 2 * a);
+                    x1 = ((-b + Math.sqrt(D)) / 2 * a);
                     System.out.println("x1 = " + x1);
-                    x2 = ((-b - D) / 2 * a);
+                    x2 = ((-b - Math.sqrt(D)) / 2 * a);
                     System.out.println("x1 = " + x1);
                 }
             }
