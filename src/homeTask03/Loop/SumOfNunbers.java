@@ -18,6 +18,6 @@ public class SumOfNunbers {
 
             System.out.println("The sum of all numbers is equal to the number entered "+c);
         }
-        else System.out.println("Error. You entered is not a number !");
+        else System.out.println("Error. You entered is not a number  !");
     }
 }
