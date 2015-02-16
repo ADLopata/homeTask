@@ -7,7 +7,7 @@ public class DimensionalArray {
         int[][] arrey  = new int[8][5];
         for(int line=0;line<arrey.length;line++){
             for(int column=0;column<arrey[line].length;column++){
-                arrey[line][column]=(int)(Math.random()*90)+10;
+                arrey[line][column]=(int)(Math.random()*(99-10)+1)+10;
                 System.out.print(arrey[line][column]+" ");
             }
             System.out.println(" ");
