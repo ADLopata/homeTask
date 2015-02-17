@@ -33,7 +33,7 @@ public class Person {
     }
 
     public void  setParam(int newParam, int shift ){
-        long mask= 0xffff<<shift;
+        long mask= 0xffffl<<shift;
         mask=~mask;
         storag=storag & mask;
 
