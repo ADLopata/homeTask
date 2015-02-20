@@ -10,9 +10,9 @@ public class Primes {
     public static void main(String[] args) {
         System.out.println("Type the numbers");
         Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        interval(n);
-        System.out.print("  " + n);
+        int  in = scan.nextInt();
+        interval(in);
+        System.out.print("  " +in );
     }
 
 
