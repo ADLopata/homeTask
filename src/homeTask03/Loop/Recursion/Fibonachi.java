@@ -10,14 +10,8 @@ import java.util.Scanner;
 public class Fibonachi {
    static   int a=0;
     public static void main(String[] args) {
-
-        int in =0;
-        System.out.print("enter the number: " );
-        Scanner scn= new Scanner(System.in);
-        in=scn.nextInt();
         System.out.print(" elements of the Fibonacci numbers: " );
-        Fib(in);
-
+        Fib(15);
         System.out.println( " \n number of repetitions of 4 elements: "+a);
 
     }
