@@ -9,7 +9,7 @@ import com.sourceit.hometask.basic.FractionNumber;
 public class FractionNumberOperation implements com.sourceit.hometask.basic.FractionNumberOperation {
     @Override
     public FractionNumber add(FractionNumber firstNum, FractionNumber secondNum) {
-        FractionNumber fno= new FractionNumber();
+        FractionNumber fno= new );
         fno.setDivisor( firstNum.getDivisor()*secondNum.getDivisor());
         fno.setDividend(firstNum.getDividend()*secondNum.getDivisor()+secondNum.getDividend()*firstNum.getDivisor());
 
