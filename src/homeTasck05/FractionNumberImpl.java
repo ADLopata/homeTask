@@ -3,11 +3,11 @@ package homeTasck05;
 /**
  * Created by Персикс on 27.02.2015.
  */
-public class FractionNumber implements com.sourceit.hometask.basic.FractionNumber {
+public class FractionNumberImpl implements com.sourceit.hometask.basic.FractionNumber {
 
-    private int dividend;//делимое
-    private int divisor;//делитель
-    private static final int	DEFAULT_DIVISOR_VALUE =1 ;
+    private int dividend;//делимое числитель
+    private int divisor;//делитель знаменатель
+   // private static final int	DEFAULT_DIVISOR_VALUE =1 ;
 
 
     @Override

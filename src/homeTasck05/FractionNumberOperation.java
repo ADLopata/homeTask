@@ -41,12 +41,13 @@ public class FractionNumberOperation implements com.sourceit.hometask.basic.Frac
     }
 
     @Override
+    //принемает строку и  выдает  числовую готовую дробь
     public FractionNumber parseFractionNumber(String s) {
         FractionNumberImpl pars= new FractionNumberImpl();
               int index= s.indexOf('/');//в нашей  s строке считаем номер индекса /
-              if(index ==-1){//если / нет в нашей строке (число им  вид 2-> 2/1)то возвращаем строку которую преобразуем в интежер
+              if(index <0){//если / нет в нашей строке (число им  вид 2-> 2/1)то возвращаем строку которую преобразуем в интежер
 
-          //  Integer i= new Integer(s);//более медленная вариация следующей записи ,но идентичная
+           // Integer i= new Integer(s);//более медленная вариация следующей записи ,но идентичная
             pars.setDividend(Integer.valueOf(s));//в наш числитель загужаем нашу строчку к примеру просто число 2.
 
             //в знаменатель загружаем из интерфейса конст = 1 и получаем число не 2 ,а 2/1
