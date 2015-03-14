@@ -56,8 +56,14 @@ public class CollectionUtilImpl implements CollectionUtils {
                 "collection one or two is null");
         Collection<Integer> unionDiff= new ArrayList<Integer>(collection);
         unionDiff.removeAll(collection1);
+      //  unionDiff.removeAll(collection);
+        Collection<Integer> unDif2= new ArrayList<Integer>(collection1);
+        unDif2.removeAll(collection);
+        Collection<Integer> addAll= new ArrayList<Integer>();
+        addAll.addAll(unionDiff);
+        addAll.addAll(unDif2);
 
-        return unionDiff;
+        return addAll;
 
     }
 }
